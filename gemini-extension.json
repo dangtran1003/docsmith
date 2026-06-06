@@ -1,0 +1,6 @@
+{
+  "name": "docsmith",
+  "version": "1.0.0",
+  "description": "Documentation automation skill. Staged pipeline, optional FPT Cloud compliance, progressive-disclosure for small context windows.",
+  "contextFileName": "GEMINI.md"
+}

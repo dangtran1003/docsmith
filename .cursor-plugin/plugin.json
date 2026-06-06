@@ -1,0 +1,9 @@
+{
+  "name": "docsmith",
+  "version": "1.0.0",
+  "description": "Documentation automation skill. Staged pipeline, optional FPT Cloud compliance, progressive-disclosure.",
+  "author": "dangtran1003",
+  "license": "see repo",
+  "skills": "./skills",
+  "hooks": "./hooks/hooks-cursor.json"
+}

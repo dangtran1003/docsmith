@@ -1,0 +1,9 @@
+{
+  "name": "docsmith-universal",
+  "version": "1.0.0",
+  "description": "Documentation automation skill that works across Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and GitHub Copilot CLI. Progressive-disclosure structure for small context windows.",
+  "author": "dangtran1003",
+  "license": "SEE LICENSE IN repo",
+  "homepage": "https://github.com/dangtran1003/docsmith-universal",
+  "keywords": ["documentation", "skill", "agent", "claude-code", "cursor", "codex", "gemini", "opencode", "docusaurus", "fpt-cloud"]
+}

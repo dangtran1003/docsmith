@@ -1,0 +1,12 @@
+{
+  "name": "dangtran1003-docsmith-universal",
+  "owner": "dangtran1003",
+  "plugins": [
+    {
+      "name": "docsmith",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "Documentation automation — portable, progressive-disclosure. Works in Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Copilot."
+    }
+  ]
+}

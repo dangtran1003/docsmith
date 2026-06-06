@@ -1,0 +1,9 @@
+{
+  "name": "docsmith",
+  "version": "1.0.0",
+  "description": "Documentation automation skill. Staged pipeline: audience, plan, voice, draft, review, screenshots, translate, verify, score, deploy. Optional FPT Cloud compliance. Progressive-disclosure structure for small context windows.",
+  "author": "dangtran1003",
+  "license": "see repo",
+  "skills": "./skills",
+  "hooks": "./hooks/hooks.json"
+}

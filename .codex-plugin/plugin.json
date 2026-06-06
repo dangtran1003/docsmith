@@ -1,0 +1,11 @@
+{
+  "name": "docsmith",
+  "version": "1.0.0",
+  "description": "Documentation automation skill with staged pipeline and optional FPT Cloud compliance. Progressive-disclosure for small context windows.",
+  "author": "dangtran1003",
+  "license": "see repo",
+  "interface": {
+    "capabilities": ["skills"]
+  },
+  "skills": "./skills"
+}
