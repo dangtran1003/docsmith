@@ -31,7 +31,7 @@ A staged documentation pipeline: analyze audience → plan sitemap → set voice
 ## Repo layout
 
 ```
-docsmith-universal/
+docsmith/
 ├── README.md                  ← you are here
 ├── INSTALL.md                 ← per-tool install (native plugin commands)
 ├── AGENTS.md / CLAUDE.md / GEMINI.md   ← top-level bootstraps (point to the skill)
@@ -60,7 +60,7 @@ docsmith-universal/
 
 How you install depends on what your tool supports. Find your tool below; full step-by-step (verify steps, OS caveats, official-marketplace publishing) lives in **[INSTALL.md](INSTALL.md)**.
 
-> Examples use `dangtran1003/docsmith-universal`. Replace it with your own repo path if you forked it. The repo must be **public** so tools can fetch it.
+> Examples use `dangtran1003/docsmith`. Replace it with your own repo path if you forked it. The repo must be **public** so tools can fetch it.
 
 ### 1. Native install — one command pulls from the repo
 
@@ -68,17 +68,17 @@ These harnesses have a real plugin/extension system:
 
 | Tool | Install |
 |---|---|
-| **Claude Code** | `/plugin marketplace add dangtran1003/docsmith-universal`<br>`/plugin install docsmith@dangtran1003-docsmith-universal` |
-| **Gemini CLI** | `gemini extensions install https://github.com/dangtran1003/docsmith-universal`<br>update later: `gemini extensions update docsmith` |
-| **OpenCode** | Tell it: *“Fetch and follow `https://raw.githubusercontent.com/dangtran1003/docsmith-universal/main/.opencode/INSTALL.md`”* |
+| **Claude Code** | `/plugin marketplace add dangtran1003/docsmith`<br>`/plugin install docsmith@dangtran1003-docsmith` |
+| **Gemini CLI** | `gemini extensions install https://github.com/dangtran1003/docsmith`<br>update later: `gemini extensions update docsmith` |
+| **OpenCode** | Tell it: *“Fetch and follow `https://raw.githubusercontent.com/dangtran1003/docsmith/main/.opencode/INSTALL.md`”* |
 
 ### 2. Symlink install — clone once, link into the tool's rules folder
 
 **Cursor · Cline / Roo · Windsurf · Aider · GitHub Copilot.** Their marketplaces require submission, so the reliable from-repo path is a symlink. Clone once, then run the helper from your **docs project root**:
 
 ```bash
-git clone https://github.com/dangtran1003/docsmith-universal.git ~/tools/docsmith-universal
-~/tools/docsmith-universal/scripts/symlink-setup.sh ~/tools/docsmith-universal <tool>
+git clone https://github.com/dangtran1003/docsmith.git ~/tools/docsmith
+~/tools/docsmith/scripts/symlink-setup.sh ~/tools/docsmith <tool>
 ```
 
 `<tool>` = `cursor` · `cline` · `windsurf` · `aider` · `copilot` · `claude-code` · `all`. The script links docsmith into each tool's rules file (`.cursor/rules/`, `.clinerules/`, `.windsurf/rules/`, `CONVENTIONS.md`, `.github/copilot-instructions.md`) plus a top-level `AGENTS.md`. Per-tool notes — and the Windows fallback (copy `skills/docsmith/SKILL.md` if symlinks fail) — are in [INSTALL.md](INSTALL.md).
